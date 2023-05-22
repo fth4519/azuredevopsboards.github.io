@@ -27,3 +27,13 @@ stages:
         dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
+- task: Docker@2
+  displayName: Build and push image
+  inputs:
+    containerRegistry: 'DockerHubConnection'
+    repository: 'reptilianusbileciktus/website'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+    tags: |
+      $(tag)
+
