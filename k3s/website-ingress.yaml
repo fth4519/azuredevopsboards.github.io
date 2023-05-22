@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-website
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: fatihayd.in
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: website-svc
+            port:
+              number: 8080
