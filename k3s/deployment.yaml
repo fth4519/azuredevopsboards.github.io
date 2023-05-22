@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: website-deployment
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: website-deployment
+    spec:
+      containers:
+        - name: website-container
+          image: reptilianusbileciktus/website:v1
+          ports:
+            - containerPort: 8080
