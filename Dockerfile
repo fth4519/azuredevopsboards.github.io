@@ -1,8 +1,5 @@
---- Ubuntu 22.04 kullandım
 
-FROM ubuntu:22.04
-
---- Nginx'i ve gerekli paketleri yükledim
+FROM ubuntu:20.04
 
 RUN apt-get update && apt-get install -y \
 nginx \
