@@ -5,7 +5,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app.kubernetes.io/name: website-deployment-57ddb9ddf6-tsgnf
+    app.kubernetes.io/name: website-deployment-7f8f9f7857-xph9f
   ports:
     - protocol: TCP
       port: 8080
