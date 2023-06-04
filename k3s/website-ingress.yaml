@@ -4,6 +4,10 @@ metadata:
   name: ingress-website
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+    - fatihayd.in
+    secretName: fatih-tls
   rules:
   - host: fatihayd.in
     http:
