@@ -16,4 +16,4 @@ spec:
         - name: website-container
           image: reptilianusbileciktus/website:#{Build.BuildId}#
           ports:
-            - containerPort: 8080
+            - containerPort: 80
