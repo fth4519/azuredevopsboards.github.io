@@ -81,7 +81,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +97,7 @@ body {
   }
   
   .popup-content {
-    background-color: #fafafa;
+    background-color: #bbceb8;
     color: #000;
     padding: 20px; /* Rectangle is now wider without any overflow */
     border-radius: 5px;
