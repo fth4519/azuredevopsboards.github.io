@@ -1,1 +1,80 @@
-ss
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			margin: 20px;
+			background-color: #f2f2f2;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		h1 {
+			color: #333;
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			color: #666;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <h1>Work Item Hiyerarşisi</h1>
+  <p>Bu sekmeye tıkladığınızda önünüze Epic, Feature gibi terimler gelecektir, bu terimler temelde projelerin yapısını ve ilişkilerini göstermek için kullanılan araçlardır. Aşağıda bu araçlar ile ilgili bilgi sahibi olacağınız bir örnek bırakıyorum. İyi okumalar.</p>
+  <img src="work-item-hiyerarşi-buton2.png" alt="İş Item Hiyerarşisi" />
+  <h2>Proje</h2>
+<p>Work item hiyerarşisinin en üst seviyesinde yer alan birimdir. Bir projenin genel amacını, hedeflerini ve kapsamını temsil eder. Örneğin, bir web sitesi geliştirme projesi bir projeyi temsil edebilir. Projede birden fazla work item bulunur ve bu work item'lar, projenin farklı yönlerini, özelliklerini veya görevlerini temsil eder. Proje yönetimi ve takibi, projenin ilerlemesini izlemek, hedeflere ulaşmak için kaynakları ve zamanı yönetmek anlamına gelir.</p>
+
+<h2>Epik</h2>
+<p>Projenin temel bileşenlerini ve büyük ölçekli work item'larını temsil eder. Epic'ler, proje sürecinde birkaç aya veya daha uzun bir süreye yayılan çalışmaları ifade eder. Her epic, projenin hedeflerinden birini gerçekleştirmek için birden fazla work item içerir. Örneğin, kullanıcı kaydı ve oturum açma epic'i, user story ile ilgili işlemleri kapsayan bir epic olabilir. Bu epic altında, kullanıcı kaydı, oturum açma, şifre sıfırlama gibi daha spesifik work item'lar yer alabilir. Epic'ler, projenin büyük hedeflerini bölümlere ayırarak yönetimi ve takibi kolaylaştırır.</p>
+
+<h2>Feature</h2>
+<p>Epic'lerin altında yer alan ve proje hedeflerine ulaşmak için gereken belirli bir bileşeni veya işlevi temsil eden work item'lardır. Feature'lar, daha küçük ve yönetilebilir parçalara ayrılmıştır ve genellikle bir veya daha fazla user story içerir. Örneğin, kullanıcı profilini düzenleme özelliği, kullanıcıların kendi profil bilgilerini güncelleyebilecekleri bir işlevi ifade eder. Bu feature altında, kullanıcı adını değiştirme, profil fotoğrafını güncelleme gibi daha spesifik work item'ları yer alabilir. Feature'lar, proje sürecindeki işleri daha yönetilebilir hale getirir ve kullanıcıların isteklerini karşılamak için gerekli olan işlevleri tanımlar.</p>
+
+<h2>User Story</h2>
+<p>Kullanıcıların perspektifinden belirli bir gereksinimi veya işlevi tanımlayan ve kullanıcının neyi başarmak istediğini, neden ihtiyaç duyduğunu ve işlevin nasıl çalışması gerektiğini açıklayan work item'larıdır. User story'leri genellikle "Bir kullanıcı olarak (kullanıcı rolü), (bir hedef) yapmak istiyorum, böylece (bir neden)" şeklinde ifade edilir. Örneğin, bir kullanıcının profil fotoğrafını değiştirebilmesi için aşağıdaki gibi bir user story olabilir:</p>
+
+<p>"Bir kullanıcı olarak (sistem üyesi), profil fotoğrafımı değiştirmek istiyorum, böylece güncel bir fotoğrafımı kullanıcılarla paylaşabilirim."</p>
+
+<p>User story , kullanıcının neyi yapmak istediğini ve neden ihtiyaç duyduğunu anlatarak work item'ın amacını ve kullanıcının beklentisini belirtir. Bu şekilde, ekip üyeleri user story'yi anlayarak gerekli work item'ları oluşturabilir ve kullanıcının isteğini karşılamak için gereken işlevleri tanımlayabilir.</p>
+
+<h2>Task</h2>
+<p>User story' nin gerçekleştirilmesi için ayrılan ve daha küçük, yönetilebilir adımlara bölünmüş work item'lardır. Tasklar genellikle bir yazılım geliştirme taskı, bir tasarım taskı veya başka bir spesifik taskı temsil eder. Tasklar, user story'nin tamamlanması için yapılması gereken adımları ve ayrıntıları içerir.</p>
+
+<p>Örneğin, "kullanıcı profil fotoğrafı yükleme" işlemi için bir task şu şekilde olabilir:</p>
+
+<ul>
+  <li>Kullanıcı arayüzünde "Profil Düzenle" seçeneğini eklemek</li>
+  <li>Kullanıcının fotoğraf seçebilmesi için bir dosya yükleme butonu oluşturmak</li>
+  <li>Yüklenen fotoğrafın boyutunu sınırlamak ve uygun formata dönüştürmek</li>
+  <li>Fotoğrafın sunucuya yüklenmesini ve veritabanında ilgili kullanıcının profiline bağlanmasını sağlamak</li>
+  <li>Profil sayfasında güncellenmiş fotoğrafın görüntülenmesini sağlamak</li>
+</ul>
+
+<p>Bu tasklar, user story'de belirtilen "kullanıcı profil fotoğrafını değiştirme" işlevini gerçekleştirmek için gerekli adımları temsil eder. Tasklar , daha küçük ve daha yönetilebilir parçalara bölünerek ekibin çalışmasını kolaylaştırır ve işin ilerlemesini takip etmeyi sağlar.</p>
+
+<p>Bu hiyerarşi, work item'ların birbirleriyle ilişkisini ve projenin bütünsel yapısını göstermek için kullanılır. Her seviye, daha geniş bir perspektiften daha ayrıntılı bir perspektife doğru ilerler. Bu şekilde, proje ekibi, work item'ları planlayabilir, atayabilir, takip edebilir ve projenin ilerlemesini anlayabilir.</p>
+
+<p>Work item hiyerarşisi, projenin karmaşıklığına, ekip yapısına ve gereksinimlere bağlı olarak farklılık gösterebilir. Bazı projelerde daha fazla veya daha az hiyerarşik seviye olabilir. Ek olarak, bazı projelerde farklı isimlendirme veya terminoloji kullanılabilir, ancak genel prensip, work item'ların birbirleriyle ilişkisini ve projenin yapısını göstermektir.</p>
+
+</body>
+</html>
