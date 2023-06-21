@@ -1,51 +1,60 @@
 <html>
-<body>
+<head>
     <style>
-body {
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-    margin-top: 20px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-ol {
-    margin-left: 30px;
-}
-
-.image-container {
-    text-align: center;
-    margin-top: 30px;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 200px;
-    height: auto;
-}
-
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+            font-weight: bold;
+            font-style: italic;
+            color: #3399CC;
+        }
+        
+        p {
+            margin-bottom: 10px;
+            color: #3399CC;
+            font-style: italic;
+        }
+        
+        ol {
+            margin-left: 30px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+            height: auto;
+        }
     </style>
-<p>Azure DevOps Boards'da bir sorgu oluşturarak belirli bir takım veya kullanıcıya e-posta göndermek için aşağıdaki adımları izleyebilirsiniz:</p>
-<ol>
-<li>Azure DevOps Boards'a giriş yapın ve ilgili projeyi seçin.</li>
-<li>Sol gezinti çubuğunda "Boards" veya "Work" bölümüne gidin.</li>
-<li>Üst gezinti çubuğunda "Queries" sekmesini seçin.</li>
-<li>Mevcut sorgulardan birini seçerek düzenlemek veya yeni bir sorgu oluşturmak için "New query" veya benzer bir butonu tıklayın.</li>
-<li>Sorgu oluşturma ekranında, filtreleme ve sıralama seçeneklerini kullanarak istediğiniz sorguyu oluşturun. Örneğin, belirli bir ekip üyesine atanmış açık iş öğelerini filtrelemek için "Assigned To" filtresini kullanabilirsiniz.</li>
-<li>Sorgunuzun adını ve açıklamasını girin ve gerektiğinde diğer ayarları yapılandırın.</li>
-<li>Sorguyu kaydetmek için "Save query" veya benzer bir butonu tıklayın.</li>
-<li>Sorgunuz, "Queries" bölümünde görünecektir. Sorgunuzu seçin ve altındaki iş öğelerini listeleyen bir görünüm açılacaktır.</li>
-<li>E-posta göndermek için, sorgunuzun üstündeki "Export" veya "Share" seçeneklerini kontrol edin. Bu seçenekler genellikle bir rapor veya CSV dosyası oluşturma veya paylaşma seçeneklerini içerir.</li>
-<li>E-posta göndermek istediğiniz takım veya kullanıcılara, oluşturduğunuz raporu veya CSV dosyasını e-posta yoluyla gönderebilirsiniz. Bunun için kendi e-posta istemcinizi veya Azure DevOps Boards'daki "Share" veya "Export" seçeneklerini kullanabilirsiniz.</li>
-</ol>
-<p>Bu şekilde, oluşturduğunuz sorgu ile belirli bir takım veya kullanıcıya ait iş öğelerini filtreleyebilir ve bu bilgileri e-posta yoluyla paylaşabilirsiniz.</p>
-<img src="dot.png" alt="Azure DevOps Boards" />
+</head>
+<body>
+    <h1>Azure DevOps Boards'da bir sorgu oluşturarak belirli bir takım veya kullanıcıya e-posta göndermek</h1>
+    <p>Aşağıdaki adımları izleyerek Azure DevOps Boards'da bir sorgu oluşturabilir ve belirli bir takım veya kullanıcıya e-posta gönderebilirsiniz:</p>
+    <ol>
+        <li>Azure DevOps Boards'a giriş yapın ve ilgili projeyi seçin.</li>
+        <li>Sol gezinti çubuğunda "Boards" veya "Work" bölümüne gidin.</li>
+        <li>Üst gezinti çubuğunda "Queries" sekmesini seçin.</li>
+        <li>Mevcut sorgulardan birini seçerek düzenlemek veya yeni bir sorgu oluşturmak için "New query" veya benzer bir butonu tıklayın.</li>
+        <li>Sorgu oluşturma ekranında, filtreleme ve sıralama seçeneklerini kullanarak istediğiniz sorguyu oluşturun. Örneğin, belirli bir ekip üyesine atanmış açık iş öğelerini filtrelemek için "Assigned To" filtresini kullanabilirsiniz.</li>
+        <li>Sorgunuzun adını ve açıklamasını girin ve gerektiğinde diğer ayarları yapılandırın.</li>
+        <li>Sorguyu kaydetmek için "Save query" veya benzer bir butonu tıklayın.</li>
+        <li>Sorgunuz, "Queries" bölümünde görünecektir. Sorgunuzu seçin ve altındaki iş öğelerini listeleyen bir görünüm açılacaktır.</li>
+        <li>E-posta göndermek için, sorgunuzun üstündeki "Export" veya "Share" seçeneklerini kontrol edin. Bu seçenekler genellikle bir rapor veya CSV dosyası oluşturma veya paylaşma seçeneklerini içerir.</li>
+        <li>E-posta göndermek istediğiniz takım veya kullanıcılara, oluşturduğunuz raporu veya CSV dosyasını e-posta yoluyla gönderebilirsiniz. Bunun için kendi e-posta istemcinizi veya Azure DevOps Boards'daki "Share" veya "Export" seçeneklerini kullanabilirsiniz.</li>
+    </ol>
+    <p>Bu şekilde, oluşturduğunuz sorgu ile belirli bir takım veya kullanıcıya ait iş öğelerini filtreleyebilir ve bu bilgileri e-posta yoluyla paylaşabilirsiniz.</p>
+    <div class="image-container">
+        <img src="dot.png" alt="Azure DevOps Boards" />
+    </div>
 </body>
 </html>
